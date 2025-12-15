@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom background grid */
+.bg-grid-pattern {
+  background-image: url("/grid.svg");
+  opacity: .4;
+}
+
+/* gradient text fix */
+.text-gradient {
+  @apply bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent;
+}
